@@ -164,9 +164,7 @@ namespace RockPaperScissors
 
                 var selected = 0;
                 var validated = int.TryParse(input.KeyChar.ToString(), out selected);
-                var condition = selected >= 1 && selected <= 3;
 
-                // Hvis det valgte nummer er mindre end 0 og det valgte nummer er større end 3
                 if (!validated || (0 > selected || selected > 3))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
